@@ -174,57 +174,7 @@ section {
   line-height: 2;
 }
 
-.book-form {
-  width: 80%;
-  margin: 1rem auto;
-  margin-top: -5rem;
-  background: #222;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
-          box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
-  padding: 3rem 2rem;
-}
 
-.book-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.book-form form .inputBox {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25rem;
-          flex: 1 1 25rem;
-}
-
-.book-form form .inputBox span {
-  font-size: 1.4rem;
-  color: #aaa;
-}
-
-.book-form form .inputBox input {
-  width: 100%;
-  padding: 1.2rem 1.4rem;
-  border-radius: 5rem;
-  border: 0.2rem solid #29d9d5;
-  font-size: 1.6rem;
-  color: #aaa;
-  text-transform: none;
-  background: none;
-  margin-top: 1rem;
-}
-
-.book-form form .btn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 15rem;
-          flex: 1 1 15rem;
-}
 
 .about {
   display: -webkit-box;
@@ -599,8 +549,8 @@ section {
 }
 
 .banner {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/banner-bg.jpg) no-repeat;
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/banner-bg.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(images/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(images/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
@@ -810,6 +760,10 @@ section {
   padding: 12px;
 }
 
+.form-input:focus{
+  background-color: #111;
+}
+
 .form-input::placeholder, .form-inputarea::placeholder{
   color: #aaa;
 }
@@ -826,6 +780,9 @@ section {
   padding: 12px;
 }
 
+.form-inputarea:focus{
+  background-color: #111;
+}
 
 .contact-form-button{
   font-size: 20px;
@@ -843,4 +800,151 @@ section {
 .contact-form-button:hover{
   background-color: #111;
   cursor: pointer;
+}
+
+
+
+
+
+.booking .book-form {
+  width: 100%;
+  margin: 1rem auto;
+  background: #222;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+          box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+  padding: 3rem 2rem;
+}
+
+.booking .book-form .flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+/* .book-form form .inputBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
+}
+
+.book-form form .inputBox span {
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.book-form form .inputBox input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border-radius: 5rem;
+  border: 0.2rem solid #29d9d5;
+  font-size: 1.6rem;
+  color: #aaa;
+  text-transform: none;
+  background: none;
+  margin-top: 1rem;
+}
+
+.book-form form .btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 15rem;
+          flex: 1 1 15rem;
+} */
+
+
+
+
+
+
+
+
+
+.booking .book-form .flex .inputBox{
+  flex:1 1 41rem;
+  color: white
+}
+
+.booking .book-form .flex .inputBox input{
+  background-color: #222;
+  width: 100%;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #29d9d5;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #aaa;
+  padding: 12px;
+}
+
+.booking .book-form .flex .inputBox input::placeholder{
+  color: #aaa;
+}
+
+.booking .book-form .flex .inputBox input:focus{
+  background-color: #111;
+}
+
+/* .booking .book-form .flex .inputBox input:focus::placeholder{
+  color:var(--light-white);
+} */
+
+.booking .book-form .flex .inputBox span{
+  font-size: 1.5rem;
+  color:var(--light-black);
+}
+
+.booking .book-form .btn{
+  margin-top: 2rem;
+}
+
+
+.home-form {
+  margin: 0 auto;
+  margin-top: 5%;
+  height: 500px;
+  width: 100%;
+  border-radius: 1rem;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../images/home-bg.jpg) no-repeat; */
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(images/form-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.home-form .content {
+  text-align: center;
+}
+
+.home-form .content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #fff;
+  font-size: 4vw;
+  display: block;
+}
+
+.home-form .content h3 {
+  font-size: 6vw;
+  color: #fff;
+}
+
+.home-form .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 20px;
+  color: #aaa;
+  line-height: 2;
 }
